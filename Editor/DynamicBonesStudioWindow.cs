@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using VRCSDK2;
+using VRC.SDKBase;
 
 /**
  * 
@@ -501,7 +501,7 @@ public class DynamicBonesStudioWindow : EditorWindow
             GUILayout.BeginVertical(EditorStyles.helpBox);
 
             EditorGUI.indentLevel++;
-            EditorGUILayout.LabelField("Dynamic Bones Studio v0.3\n" +
+            EditorGUILayout.LabelField("Dynamic Bones Studio v0.31\n" +
                                     "by Kaori\n\n" +
                                     "Feedback or bugs can be posted to GitHub or sent to me through discord:\n" +
                                     "Kaori#0420", EditorStyles.textArea);
@@ -511,6 +511,11 @@ public class DynamicBonesStudioWindow : EditorWindow
             if (GUILayout.Button("GitHub", new[] { GUILayout.ExpandWidth(false) }))
             {
                 Application.OpenURL("https://github.com/kaaori/DynamicBonesStudio");
+            }
+
+            if (GUILayout.Button("Buy me a coffee", new[] { GUILayout.ExpandWidth(false) }))
+            {
+                Application.OpenURL("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JZYZWQQZRJ4FC");
             }
 
             GUILayout.EndHorizontal();
